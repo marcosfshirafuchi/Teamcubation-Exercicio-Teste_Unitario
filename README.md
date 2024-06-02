@@ -5,7 +5,7 @@
 - [Marcos Shirafuchi](https://github.com/marcosfshirafuchi)
 
 # Exercício - Teste Unitário
-
+Criar uma classe FizzBuzz em que implemente o seguinte exercício e tenha cobertura de testes:
 
 Pré-requisito:<br>
 - Ter o JUnit nas dependências do projeto
