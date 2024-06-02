@@ -85,4 +85,23 @@ public class ExercicioTesteUnitarioTest {
         int i = 15;
         Assertions.assertEquals("FizzBuzz",ExercicioTesteUnitario.definirFizzBuzzNumero(i));
     }
+    @Test
+    void numeroDigitadoEhPositivo(){
+        int numero = 100;
+        //Assertions.assertTrue(ExercicioTesteUnitario.numeroDigitado(numero));
+        //Assertions.assertNotNull(ExercicioTesteUnitario.numeroDigitado(numero));
+        Assertions.assertEquals("Numero Positivo",ExercicioTesteUnitario.numeroDigitado(numero));
+    }
+
+    @Test
+    void numeroDigitadoEhZero(){
+        int numero = 0;
+        Assertions.assertEquals("Numero Zero",ExercicioTesteUnitario.numeroDigitado(numero));
+    }
+
+    @Test
+    void numeroDigitadoEhNegativo(){
+        int numero = -100;
+        Assertions.assertEquals("Numero Negativo",ExercicioTesteUnitario.numeroDigitado(numero));
+    }
 }

@@ -54,5 +54,30 @@ public class ExercicioTesteUnitario {
 
     }
 
+    public static void impressaoDosNumeros(int numeroDigitado){
+        for (int i=1; i<= numeroDigitado; i++){
+            if (ExercicioTesteUnitario.verificacaoNumeroDivisivelPor3EPor5(i)){
+                System.out.println(ExercicioTesteUnitario.definirFizzBuzzNumero(i));
+            }else if(ExercicioTesteUnitario.verificacaoNumeroDivisivelPor3(i)){
+                System.out.println(ExercicioTesteUnitario.definirFizzBuzzNumero(i));
+            } else if (ExercicioTesteUnitario.verificacaoNumeroDivisivelPor5(i)) {
+                System.out.println(ExercicioTesteUnitario.definirFizzBuzzNumero(i));
+            }else{
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static String numeroDigitado(int numero){
+        if (numero >0){
+            impressaoDosNumeros(numero);
+            return "Numero Positivo";
+        }else if(numero == 0){
+            return "Numero Zero";
+        }else{
+            return  "Numero Negativo";
+        }
+    }
+
 
 }
