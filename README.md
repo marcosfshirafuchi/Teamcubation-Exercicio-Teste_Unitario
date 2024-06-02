@@ -6,6 +6,24 @@
 
 # Exercício - Teste Unitário
 
+
+Pré-requisito:<br>
+- Ter o JUnit nas dependências do projeto
+- Usei o JDK 21 e as versões do Junit no POM.XML do Maven.
+- Versão do Junit que usei no Maven:
+
+```
+<dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.11.0-M2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+```
+
+
 Escreva um código onde você vai receber um número n, e deve imprimir todos os números, partindo do 1 até n, com a seguinte condição:
  * Se um número for divisível por 3, ao invés de imprimir o número, você deve imprimir Fizz.
  * Se um número for divisível por 5, ao invés de imprimir o número, você deve imprmimir Buzz.
