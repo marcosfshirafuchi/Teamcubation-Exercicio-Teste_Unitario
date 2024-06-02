@@ -1,6 +1,7 @@
-public class ExercicioTesteUnitario {
+public class FizzBuzz {
     /**
      * <h1> Teamcubation - Exercício Teste Unitário</h1>
+     * Criar uma classe FizzBuzz em que implemente o seguinte exercício e tenha cobertura de testes:<br>
      * Escreva um código onde você vai receber um número n, e deve imprimir todos os números, partindo do 1 até n, com a seguinte condição:<br>
      *
      * Se um número for divisível por 3, ao invés de imprimir o número, você deve imprimir Fizz.<br>
@@ -56,12 +57,12 @@ public class ExercicioTesteUnitario {
 
     public static void impressaoDosNumeros(int numeroDigitado){
         for (int i=1; i<= numeroDigitado; i++){
-            if (ExercicioTesteUnitario.verificacaoNumeroDivisivelPor3EPor5(i)){
-                System.out.println(ExercicioTesteUnitario.definirFizzBuzzNumero(i));
-            }else if(ExercicioTesteUnitario.verificacaoNumeroDivisivelPor3(i)){
-                System.out.println(ExercicioTesteUnitario.definirFizzBuzzNumero(i));
-            } else if (ExercicioTesteUnitario.verificacaoNumeroDivisivelPor5(i)) {
-                System.out.println(ExercicioTesteUnitario.definirFizzBuzzNumero(i));
+            if (FizzBuzz.verificacaoNumeroDivisivelPor3EPor5(i)){
+                System.out.println(FizzBuzz.definirFizzBuzzNumero(i));
+            }else if(FizzBuzz.verificacaoNumeroDivisivelPor3(i)){
+                System.out.println(FizzBuzz.definirFizzBuzzNumero(i));
+            } else if (FizzBuzz.verificacaoNumeroDivisivelPor5(i)) {
+                System.out.println(FizzBuzz.definirFizzBuzzNumero(i));
             }else{
                 System.out.println(i);
             }
